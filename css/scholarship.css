@@ -1,0 +1,107 @@
+.page-hero {
+    background-image: url("../img/funding_bg.jpg");
+    background-position-y: -200px;
+    background-position-x: center;
+    background-size: cover;
+}
+.page-hero .overlay {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .4);
+    color: #FFF;
+}
+.page-hero .text {
+    padding: 100px 0;
+    display: block;
+}
+.page-hero .overlay h1 {
+    font-family: "Cloud-Light";
+    color: #FFF;
+}
+
+.open-text {
+    padding-bottom: 25px;
+}
+
+.section-header {
+    border-bottom: 1px dotted #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 50px; 
+}
+
+.scholarship {
+    padding: 10px;
+}
+.btn-wrap {
+    text-align: right;
+}
+.btn {
+     padding: 5px 10px; 
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.btn.btn-trans {
+    color: #b0000f;
+    background-color: transparent;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #b0000f;
+    -moz-box-shadow: inset 0px 0px 0px 2px #b0000f;
+    box-shadow: inset 0px 0px 0px 2px #b0000f;
+}
+
+
+.scholarship-wrap {
+    color: #b0000f;
+    padding: 50px 40px;
+    margin: 20px 0;
+    border: 1px solid #d5d8d9;
+    -moz-box-shadow: #C3C6C7 2px 2px 5px -2px;
+    -webkit-box-shadow: #C3C6C7 2px 2px 5px -2px;
+    box-shadow: #C3C6C7 2px 2px 5px -2px;
+    background: #fff;
+    overflow: hidden;
+}
+@media (min-width: 1200px) {
+    /*large*/
+
+} 
+@media (max-width: 1199px) and (min-width: 992px) {
+    /*medium*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    /*small*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+
+}
+@media (max-width: 767px) {
+    /*extra small*/
+    h1 {
+        font-size: 33px;
+    }
+    .page-hero {
+        background-position-y: 0px;
+    }
+    .scholarship {
+        text-align: center;
+        border-bottom: 1px dotted #ccc;
+    } 
+    .scholarship h4 {
+        text-align: center;
+        padding-bottom: 15px;
+    } 
+    .btn-wrap {
+        text-align: center;
+    }
+    
+}

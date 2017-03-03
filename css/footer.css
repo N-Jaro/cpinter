@@ -1,0 +1,46 @@
+
+.footer {
+    background-color: #b0000f;
+    padding: 20px;
+    color: #FFF;
+}
+.footer .logo {
+    padding-top: 20px;
+}
+.footer p {
+    font-size: 13px;
+}
+
+@media (min-width: 1200px) {
+    /*large*/
+
+} 
+@media (max-width: 1199px) and (min-width: 992px) {
+    /*medium*/
+
+.footer .logo img {
+    width: 100%;
+}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    /*small*/
+    .footer .logo img {
+        display: block;
+        width: 100%;
+    }
+
+}
+@media (max-width: 767px) {
+    /*extra small*/
+    .footer .logo {
+        padding-bottom: 20px;
+    }
+    .footer .logo img {
+        display: block;
+        width: 100%;
+    }
+    .footer p {
+        font-size: 12px;
+        text-align: center;
+    }
+}

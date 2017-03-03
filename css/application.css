@@ -1,0 +1,176 @@
+
+.cmb-th+.cmb-td {
+    display: inline-block;
+}
+.cmb-th {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3;
+    padding: 0px 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    min-height: inherit;
+}
+.cmb2-id-photo.cmb-type-file .cmb-th, .cmb2-id-passport-copy.cmb-type-file .cmb-th, .cmb2-id-degree .cmb-th, .cmb2-id-financial .cmb-th,.cmb2-id-app-email .cmb-th,.cmb2-id-app-email .cmb-th,.cmb2-id-photo .cmb-th,.cmb2-id-app-name .cmb-th,.cmb2-id-app-mid-name .cmb-th,.cmb2-id-app-last-name .cmb-th,.cmb2-id-app-prefix .cmb-th,.cmb2-id-gender .cmb-th,.cmb2-id-marital .cmb-th,.cmb2-id-birthdate .cmb-th,.cmb2-id-country .cmb-th,.cmb2-id-nationality .cmb-th,.cmb2-id-citizen-id .cmb-th,.cmb2-id-passport-id .cmb-th,.cmb2-id-p-issue .cmb-th,.cmb2-id-p-country .cmb-th,.cmb2-id-passport-copy .cmb-th, .cmb2-id-p-expire .cmb-th {
+
+    width: 210px;
+}
+.cmb2-id-current-city .cmb-th, .cmb2-id-current-province .cmb-th, .cmb2-id-current-zip .cmb-th, .cmb2-id-current-country .cmb-th, .cmb2-id-current-tel .cmb-th, .cmb2-id-current-adress .cmb-th, .cmb2-id-second-city .cmb-th, .cmb2-id-second-province .cmb-th, .cmb2-id-second-zip .cmb-th, .cmb2-id-second-country .cmb-th, .cmb2-id-second-tel .cmb-th, .cmb2-id-second-adress .cmb-th  {
+    width: 125px;
+}
+.cmb-th small {
+    font-weight: 500;
+    font-size: 10px;
+    display: block;
+}
+.cmb-td {
+    line-height: 1.3;
+    width: 50%;
+    padding: 5px 0 0 0;
+    vertical-align: top;
+}
+
+.cmb-type-select select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.cmb-type-text input, .cmb-type-text-date input, .cmb-type-text-email input, 
+.cmb-repeat-group-field .cmb-type-text input, .cmb-repeat-group-field .cmb-type-text-date input, .cmb-repeat-group-field .cmb-type-text-email input {
+    width: 100%
+}
+
+.cmb-type-file .cmb-th, .cmb-type-select.cmb2-id-eng-type .cmb-th {
+    width: 20%;
+    min-height: 40px;
+}
+.cmb-type-file .cmb-td input.cmb2-upload-file {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-top: 0px;
+    height: 25px;
+}
+.cmb-type-file .cmb-td .cmb2-upload-button {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left:none;
+    height: 25px;
+}
+
+.cmb2-radio-list.cmb2-list li {
+    display: inline;
+    padding: 0px 5px;
+}
+
+.cp_content ul, .cp_content ol {
+    margin: 0 0 0em 0px;
+    padding: 0px;
+    display: inherit;
+}
+
+.full-width .cmb-td {
+    width: 70%;
+}
+
+.cmb-type-wysiwyg.full-width .cmb-td {
+    width: 100%;
+}
+.cp_content h2 {
+    color: #b0000f;
+    font-family: "Cloud-Light";
+    margin: 20px 0 20px;
+}
+
+.wp-editor-container {
+    clear: both;
+    border: 1px solid #d5d5d5;
+}
+
+.wp-editor-tabs {
+    float: right;
+    display: none;
+}
+
+/* Repeatable Field style */
+.cmb-row.cmb-repeat-group-field {
+    min-height: 40px;
+}
+.cmb-repeat-group-field>.cmb-th {
+    width: 25%;
+} 
+.cmb-repeat-group-field .cmb-td{
+    width: 70%;
+}
+.cmb-repeatable-grouping>.cmb-td, .cmb-repeat-group-wrap>.cmb-td {
+    width: 100%;
+}
+.cmb2-metabox .cmb-type-group {
+    max-width: none !important;
+}
+.cmb2-metabox button.dashicons-before.dashicons-no-alt.cmb-remove-group-row, .cmb-type-group .cmb-row .cmbhandle {
+    display: none;
+}
+.cmb-row.cmb-remove-field-row {
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+.postbox.cmb-row.cmb-repeatable-grouping {
+    border-bottom: 1px dotted #ddd;
+}
+.cmb-type-multicheck-inline .cmb-td {
+    width:100%;
+    text-align: center;
+}
+.cmb2-id-how-you-know-other .cmb-td {
+    width: 100%;
+    text-align: center;
+}
+input#how_you_know_other {
+    width: 40%;
+}
+ul.cmb2-checkbox-list.cmb2-list {
+    list-style: none;
+}
+ul.cmb2-checkbox-list.cmb2-list li {
+    display: inline-block;
+    width: 100px;
+}
+
+.cmb2-id-how-you-know>.cmb-td>p {
+    display: none;
+}
+
+#how_you_know_other {
+    display: none;
+}
+
+/* Validation Style */
+.parsley-errors-list {
+    list-style: none;
+}
+.parsley-errors-list li {
+    font-size: 10px;
+    color: #b0000f;
+}
+.parsley-error {
+    background-color: #ffe1e4;
+}
+.cmb-type-file .parsley-errors-list {
+
+}
+
+a {
+    font-size: inherit;
+}
+
+input.button-primary {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 0 auto;
+}

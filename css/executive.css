@@ -1,0 +1,141 @@
+.page-hero {
+    background-image: url("../img/research.jpg");
+    background-position-y: -600px;
+    background-position-x: center;
+    background-size: cover;
+}
+.page-hero .overlay {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .4);
+    color: #FFF;
+}
+.page-hero .text {
+    padding: 100px 0;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.page-hero .overlay h1 {
+    font-family: "Cloud-Light";
+    color: #FFF;
+}
+
+.content-wrap {
+    padding: 40px 0px;
+}
+.staff-wrap {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.staff-wrap .image {
+    max-height: 220px;
+    overflow: hidden;
+    vertical-align: bottom;
+    display: table-cell;
+}
+.staff-wrap .image img {
+    width: 100%;
+}
+.staff-wrap h2.name {
+    font-size: 20px;
+    display: block;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+}
+.staff-wrap p.position {
+    padding-top: 5px;
+    font-size: 15px;
+    color: #b0000f;
+    font-family: "Cloud-Bold";
+}
+.contact {
+    font-size: 15px;
+}
+.staff-wrap .contact a {
+    font-size: 13px;
+
+}
+.contact .phone,.contact .email, .contact .addr, .contact .interest, .contact .website {
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    height: 20px;
+    margin-top: 10px;
+}
+.contact .interest {
+    padding-left: 15px;
+    height: auto;
+}
+.contact .website {
+    background-image: url(../img/icon-website.png);
+}
+.contact .phone {
+    background-image: url(../img/icon-phone.png);
+}
+.contact .email {
+    background-image: url(../img/icon-email.png);
+}
+.contact .addr {
+    background-image: url(../img/icon-location.png);
+}
+
+@media (min-width: 1200px) {
+    /*large*/
+
+} 
+@media (max-width: 1199px) and (min-width: 992px) {
+    /*medium*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+    .staff-wrap .image {
+        max-height: 420px;
+        overflow: hidden;
+    }
+
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    /*small*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+    .page-hero .text {
+    }
+    .staff-wrap .image {
+        max-height: 360px;
+        overflow: hidden;
+    }
+    .staff-wrap h2.name {
+        padding-top: 20px;
+    }
+
+}
+@media (max-width: 767px) {
+    /*extra small*/
+    .page-hero {
+        background-position-y: 0px;
+    }
+    .page-hero .overlay h1 {
+        font-size: 50px;
+    }
+    .page-hero .text {
+         width: 100%; 
+    }
+    .staff-wrap {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .staff-wrap .image {
+        max-height: 600px;
+        overflow: hidden;
+    }
+    .content-wrap {
+         padding: 20px 0px; 
+    }
+    .staff-wrap h2.name {
+        padding-top: 20px;
+    }
+    
+}

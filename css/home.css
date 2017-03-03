@@ -1,0 +1,63 @@
+.hero{background-image:url("../img/hero-img.jpg");background-position-y:-120px;background-position-x:center;background-size:cover;}
+.hero .overlay{background-color:rgba(0, 0, 0, .6);}
+.hero .text{color:#FFF;padding:100px 0 120px;}
+.hero .text h1{margin-bottom:30px;font-family:"Cloud-Light";color:#FFF;}
+.hero .text p{margin-bottom:50px;}
+.hero .btn{font-size:19px;font-family:"Cloud-Bold";padding:10px 30px 7px;margin-right:30px;}
+.first-section{margin:50px 0 90px;}
+.first-section .left h2{font-family:"Cloud-Light";}
+.first-section .left h2,.first-section .left p,.right-title h2{margin-bottom:40px;}
+.course{background-color:#b0000f;color:#FFF;padding:45px 15px 10px;cursor:pointer;-webkit-transition:all .7s;-moz-transition:all .7s;transition:all .7s;}
+.course .title{font-family:"Cloud-Light";padding-bottom:25px;font-size:19px;line-height:27px;margin:0;color:#FFF;}
+.course .read-more{color:#fff;}
+.course .description{font-size:13px;color:#ccc;padding-bottom:15px;font-family:"Cloud-Light";}
+.course .info p{color:#FFF;font-family:"Cloud-Light";padding:0;font-size:13px;}
+.course .info i{padding-right:10px;font-size:13px;}
+.course a.read-more{line-height:1em;}
+.course a.read-more i{color:#FFF;margin:0;padding:0;-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s;}
+.course:hover{background-color:#ccc;color:#000 !important;}
+.course:hover a{text-decoration:none;}
+.course:hover .description, .course:hover .title,.course:hover .read-more{color:#000;}
+.course:hover a.read-more i{-ms-transform:rotate(135deg);-webkit-transform:rotate(135deg);transform:rotate(135deg);transform-origin:center center;}
+.content-section{border-top:2px solid #ccc;}
+.content-section .left{border-right:1px dotted #CCC;}
+.content-section .left .content{padding:0 0 20px 0;}
+.content-section .left .content p{padding:5px 0;}
+.post-date{padding-bottom:15px;font-family:"Cloud-Light";}
+.post-date .fa{padding-right:10x;}
+h2.widget-title{font-size:20px;border-bottom:2px solid #CCC;padding:15px;}
+.second-section{background-color:#ebebeb;padding:50px 0 90px;}
+.section-header{padding-bottom:40px;}
+.news-wrap{cursor:pointer;background-color:#FFF;box-shadow:0px 3px 3px 0px rgba(0, 0, 0, 0.14);-webkit-transition:all .4s;-moz-transition:all .4s;transition:all .4s;}
+.news-wrap:hover{box-shadow:0px 3px 3px 0px rgba(0, 0, 0, 0.5);}
+.image-wrap{max-height:250px;overflow:hidden;border-bottom:5px solid #b0000f;-webkit-transition:all .4s;-moz-transition:all .4s;transition:all .4s;}
+.image-wrap img{width:100%;overflow:hidden;height:200px;}
+.news-wrap:hover .image-wrap{border-bottom:5px solid #ccc;}
+.text-wrap{padding:15px 15px 0 15px;}
+.text-wrap p{padding-bottom:10px;color:#000;}
+.text-wrap .title{font-family:"Cloud-Bold";font-size:17px;color:#b0000f;max-height:71px;display:block;overflow:hidden;}
+.news-wrap .more-btn{color:#FFF;background-color:#b0000f;padding:5px 10px 3px;text-align:center;}
+.news-wrap .more-btn i{-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s;}
+.news-wrap:hover .more-btn i{-ms-transform:rotate(135deg);-webkit-transform:rotate(135deg);transform:rotate(135deg);transform-origin:center center;}
+@media (min-width:1200px){}
+@media (max-width:1199px) and (min-width:992px){.hero{background-position-y:0px;}
+}
+@media (max-width:991px) and (min-width:768px){.hero{background-position-y:0px;}
+.hero .text{color:#FFF;padding:100px 0 120px;}
+.course{margin-bottom:15px}
+}
+@media (max-width:767px){.hero .overlay h1{font-size:45px;}
+.hero{background-position-y:0px;}
+.hero .text{color:#FFF;padding:50px 0 70px;}
+.hero .btn{font-size:13px;font-family:"Cloud-Bold";padding:10px 20px 8px;margin-right:15px;}
+.first-section{margin:20px 0 40px;}
+.first-section .left{padding-bottom:50px;border-bottom:solid 1px #ccc;}
+.right-title{padding-top:20px;}
+.course{margin-bottom:15px}
+.news-wrap{margin-bottom:20px;}
+}
+.stat{padding:50px 0 0;}
+.stat-wrap{text-align:center;}
+.stat-wrap .header a{font-family:"Cloud-Bold";font-size:50px;color:#b0000f;}
+.stat-wrap .header a:hover{text-decoration:underline;}
+.stat-wrap .description{color:#b0000f;}

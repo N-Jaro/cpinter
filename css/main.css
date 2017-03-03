@@ -1,0 +1,34 @@
+@font-face{font-family:'Cloud-Bold';src:url('../fonts/Cloud-Bold.eot');src:local('☺'), url('../fonts/Cloud-Bold.woff') format('woff'), url('../fonts/Cloud-Bold.ttf') format('truetype'), url('../fonts/Cloud-Bold.svg') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'Cloud-Light';src:url('../fonts/Cloud-Light.eot');src:local('☺'), url('../fonts/Cloud-Light.woff') format('woff'), url('../fonts/Cloud-Light.ttf') format('truetype'), url('../fonts/Cloud-Light.svg') format('svg');font-weight:normal;font-style:normal;}
+body{font-size:22px/1.3em;}
+h1, h2, h3{font-family:'Cloud-Bold';}
+strong{font-family:'Cloud-Bold';}
+p, a, li,td{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;}
+p{margin:5px 0;}
+a, a:visited{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#b0000f;}
+a:hover{text-decoration:underline;color:#333;}
+h1{font-size:56px;}
+h2{font-size:30px;}
+h3{font-size:20px;}
+a:link, a:hover{}
+ul, ol{margin:0 0 0.5em 1em;}
+ul li ,ol li{padding-top:5px;padding-bottom:5px;}
+.btn{padding:12px 25px 10px;margin-right:15px;margin-bottom:15px;margin-top:15px;}
+.btn.btn-default{font-family:"Cloud-Bold";color:#FFF;background-image:-moz-linear-gradient(90deg, rgb(119,15,23) 0%, rgb(177,22,35) 100%);background-image:-webkit-linear-gradient(90deg, rgb(119,15,23) 0%, rgb(177,22,35) 100%);background-image:-ms-linear-gradient(90deg, rgb(119,15,23) 0%, rgb(177,22,35) 100%);box-shadow:0px 3px 4px 0px rgba(0, 0, 0, 0.19);-webkit-box-shadow:inset 0px 0px 0px 1px #930c17;-moz-box-shadow:inset 0px 0px 0px 1px #930c17;box-shadow:inset 0px 0px 0px 1px #930c17;border:none;}
+.btn.btn-default:hover{background-image:-moz-linear-gradient(90deg, rgb(177,22,35) 0%, rgb(119,15,23) 100%);background-image:-webkit-linear-gradient(90deg, rgb(177,22,35) 0%, rgb(119,15,23) 100%);background-image:-ms-linear-gradient(90deg, rgb(177,22,35) 0%, rgb(119,15,23) 100%);}
+.btn.btn-trans{color:#FFF;font-family:"Cloud-Bold";-webkit-box-shadow:inset 0px 0px 0px 2px #fff;-moz-box-shadow:inset 0px 0px 0px 2px #fff;box-shadow:inset 0px 0px 0px 2px #fff;border:none;}
+.btn.btn-trans:hover{color:#a2a2a2;background-color:#FFF;-webkit-box-shadow:inset 0px 0px 0px 2px #fff;-moz-box-shadow:inset 0px 0px 0px 2px #fff;box-shadow:inset 0px 0px 0px 2px #fff;}
+.page-hero{background-image:url("../img/hero_bg.jpg");background-position-y:-200px;background-position-x:center;background-size:cover;}
+.page-id-100 .page-hero{background-image:url("../img/hero_bg.jpg");background-position-y:-150px;background-position-x:center;background-size:cover;}
+.page-hero .overlay{text-align:center;background-color:rgba(0, 0, 0, .57);color:#FFF;}
+.page-hero .text{padding:75px 0;width:50%;display:block;margin:0 auto;}
+.page-hero .overlay h1{font-family:"Cloud-Light";color:#FFF;}
+@media (max-width:767px){h1{font-size:33px;}
+}
+#wpadminbar #wp-admin-bar-home>.ab-item:before{content:"\f102";}
+#wpadminbar #wp-admin-bar-my-sites>.ab-item:before, #wpadminbar #wp-admin-bar-site-name>.ab-item:before{content:"\f102";top:2px;left:3px;}
+#wpadminbar #wp-admin-bar-comments>.ab-item:before, #wpadminbar #wp-admin-bar-comments>.ab-item:before{content:"\f102";top:2px;left:3px;}
+@media screen and (max-width:782px){#wpadminbar #wp-admin-bar-my-sites>.ab-item:before, #wpadminbar #wp-admin-bar-site-name>.ab-item:before{top:6px;}
+#wpadminbar li#wp-admin-bar-log-in, #wpadminbar li#wp-admin-bar-register, #wpadminbar li#wp-admin-bar-logout, #wpadminbar li#wp-admin-bar-edit-application, #wpadminbar li#wp-admin-bar-new-application{display:block;}
+#wpadminbar li#wp-admin-bar-log-in a, #wpadminbar li#wp-admin-bar-register a, #wpadminbar li#wp-admin-bar-logout a, #wpadminbar li#wp-admin-bar-edit-application a, #wpadminbar li#wp-admin-bar-new-application a{padding:0 8px;}
+}

@@ -1,0 +1,77 @@
+
+.page-hero {
+    background-image: url("../img/hero_bg.jpg");
+    background-position-y: -200px;
+    background-position-x: center;
+    background-size: cover;
+}
+.page-hero .overlay {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+    color: #FFF;
+}
+.page-hero .text {
+    padding: 100px 0;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+}
+.page-hero .overlay h1 {
+    font-family: "Cloud-Light";
+    color: #FFF;
+}
+.section-header {
+    border-bottom: 1px dotted #333;
+    padding-bottom: 10px;
+}
+.content {
+    padding-top: 40px;
+    padding-bottom: 50px; 
+}
+
+h4 {
+    font-family: "Cloud-Light";
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.acco-content .image img {
+    width: 100%;
+    padding: 25px 0;
+}
+
+@media (min-width: 1200px) {
+    /*large*/
+
+} 
+@media (max-width: 1199px) and (min-width: 992px) {
+    /*medium*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    /*small*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+    .page-hero .text {
+         width: 60%; 
+    }
+
+}
+@media (max-width: 767px) {
+    /*extra small*/
+    .page-hero {
+        background-position-y: 0px;
+    }
+    .page-hero .overlay h1 {
+        font-size: 50px;
+    }
+    .page-hero .text {
+         width: 100%; 
+    }
+}

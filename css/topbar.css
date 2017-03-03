@@ -1,0 +1,15 @@
+.topbar{background-color:#b0000f;padding:20px;}
+.topbar .left .logo{}
+.search{padding-top:7%;}
+.search .form-control{display:block;width:100%;height:27px;padding:5px 5px;font-size:14px;line-height:1.42857143;color:#FFF;background-color:#b0000f;background-image:none;border:1px solid #FFF;border-radius:0px;-webkit-box-shadow:none;box-shadow:none;}
+.search .glyphicon{color:#FFF;}
+.search .btn.btn-default{display:inline-block;padding:4px 7px 0;margin:0;background-color:#b0000f;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid #FFF;border-radius:0px;}
+.search:hover .btn.btn-default,.search:hover .btn.btn-default:hover{background-color:#FFF !important;background-image:none;box-shadow:none;}
+.search:hover .btn.btn-default .glyphicon, .search:focus .btn.btn-default .glyphicon{color:#333;}
+@media (min-width:1200px){}
+@media (max-width:1199px) and (min-width:992px){.topbar .left .logo, .topbar .left .gear{width:100%;}
+}
+@media (max-width:991px) and (min-width:768px){.topbar .left .logo, .topbar .left .gear{width:100%;}
+}
+@media (max-width:767px){.topbar .left .logo, .topbar .left .gear{width:100%;padding-bottom:10px;}
+}

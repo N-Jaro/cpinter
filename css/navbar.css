@@ -1,0 +1,30 @@
+.slicknav_menu{display:none;}
+.slicknav_menu a, .slicknav_menu a:visited{color:#fff !important;}
+#main-nav{margin:0;padding:0;list-style:none;text-align:center;}
+#main-nav li{padding-top:0px;padding-bottom:0px;}
+#main-nav li a{font-size:14px;font-family:"Cloud-Bold";}
+#main-nav li a .glyphicon{padding-left:5px;font-size:12px;color:#b5b5b5;}
+#main-nav > li{display:inline-block;position:relative;}
+#main-nav > li > a{display:block;color:#000;padding:10px 50px 6px;}
+#main-nav > li > ul{text-align:left;display:none;margin:0;padding:0;}
+#main-nav > li:hover > a{background-color:#dcdcdc;font-family:"Cloud-Bold";}
+#main-nav > li:hover > ul{list-style:none;display:block;position:absolute;top:100%;z-index:9;}
+#main-nav > li:hover > ul> li > a{font-family:"Cloud-Bold";background-color:#dcdcdc;display:block;width:280px;color:#000;padding:10px 20px 6px;border-bottom:1px solid #ccc;}
+#main-nav > li:hover > ul> li:hover > a{background-color:#a2a2a2;}
+@media (min-width:1200px){#main-nav > li > a{padding:10px 25px 6px;}
+}
+@media (max-width:1199px) and (min-width:992px){#main-nav > li > a{padding:10px 20px 6px;}
+#main-nav > li:hover > ul> li > a{width:280px;}
+}
+@media (max-width:991px) and (min-width:768px){#main-nav > li > a{padding:13px 10px 10px;font-size:12px;}
+#main-nav > li:hover > ul> li > a{width:280px;}
+}
+@media (max-width:767px){#main-nav{display:none;}
+.slicknav_menu{display:block;}
+.slicknav_menu{font-size:16px;background:#222;padding:0px;}
+.slicknav_btn{margin:0;text-decoration:none;text-shadow:none;-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;background-color:#222;float:none;text-align:right;}
+.slicknav_nav a:hover{-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;background:#ccc;color:#222;}
+.slicknav_nav .slicknav_row:hover{-webkit-border-radius:0px;-moz-border-radius:0px;border-radius:0px;background:#ccc;color:#fff;}
+.slicknav_menu .slicknav_menutxt{display:inline-block;line-height:1.188em;color:#fff;font-weight:700;text-shadow:0 1px 3px #000;float:none;}
+.slicknav_menu .slicknav_icon{display:inline-block;width:1.125em;height:.875em;margin:.188em 0 0 .438em;float:none;}
+}

@@ -1,0 +1,84 @@
+html {
+    margin-top: 0 !important;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.container {
+    width: 970px;
+}
+.header {
+    padding-bottom: 25px;
+}
+
+.section {
+    border-bottom: 1px dotted #333;
+    padding: 15px 50px;
+}
+
+h2 {
+    font-family: "Cloud-Light";
+    font-size: 23px;
+    margin: 0 0 20px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.interesting p {
+    font-size: 25px;
+}
+
+.app_label {
+    font-weight: 700;
+    padding: 0 10px 20px 0px;
+    display: inline-block;
+}
+.app_label.address {
+    padding-bottom: 0;
+}
+
+
+.app_msg {
+    border-bottom: 1px dotted #333;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    min-width: 90px;
+    text-align: center;
+}
+.app_msg.address {
+    display: inline-block;
+    text-align: left;
+    min-width: 100%;
+}
+.app_msg.tel {
+    text-align: center;
+    width: 190px;
+    display: inline-block;
+}
+.app_msg.edu {
+    text-align: center;
+    min-width: 145px;
+    display: inline-block;
+}
+.app_msg.degree {
+    text-align: center;
+    min-width: 200px;
+    display: inline-block;
+}
+.award {
+    display: inline-block;
+    text-align: justify;
+}
+.award p {
+    font-family: inherit !important;
+    font-size: 20px !important;
+}
+.award .app_msg {
+    line-height: 40px;
+    padding-bottom: 9px;
+}

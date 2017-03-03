@@ -1,0 +1,172 @@
+.page-hero {
+    background-image: url("../img/prospective_bg.jpg");
+    background-position-y: -200px;
+    background-position-x: center;
+    background-size: cover;
+}
+.page-hero .overlay {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+    color: #FFF;
+}
+.page-hero .text {
+    padding: 100px 0;
+    display: block;
+}
+.page-hero .overlay h1 {
+    font-family: "Cloud-Light";
+    color: #FFF;
+}
+
+.open-text {
+    padding-bottom: 25px;
+}
+
+.section-header {
+    border-bottom: 1px dotted #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 50px; 
+}
+
+
+.degree #left-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 50px;
+}
+.degree #left-nav li {
+    border-bottom: 1px dotted #ccc;
+}
+.degree #left-nav li a {
+    color: #333;
+    padding: 7px 0 7px 0;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.degree #left-nav li a:hover {
+    text-decoration: underline;
+}
+.degree #left-nav li a.active {
+    color: #b0000f;
+    font-family: "Cloud-Bold";
+    font-size: 16px;
+}
+
+.left .contact h4 {
+    text-transform: uppercase;
+    font-family: "Cloud-Bold";
+    font-size: 16px;
+}
+.left .contact .email {
+    /*color: #b0000f;*/
+}
+
+
+
+
+.content .right {
+    border-left: 1px dotted #ccc;
+}
+.section-title {
+    color: #b0000f;
+    font-family: "Cloud-Light";
+    margin: 0 0 20px;
+}
+.content .right .sub-title {
+    font-family: "Cloud-Light";
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.content .right p strong {
+    font-size: 14px;
+}
+.content .right ul {
+	list-style:none;
+}
+.content .table {
+    width: 90%;
+    text-align: center;
+}
+.content .semester.table {
+    width: 100%;
+}
+
+.content .semester td.red {
+    color: #b0000f;
+}
+.highlight {
+    color: #b0000f;
+    font-family: "Cloud-Bold";
+}
+th {
+    font-size: 11px;
+    padding: 5px 0 !important;
+    text-align: center;
+}
+.Title.small {
+    color: #b0000f;
+    font-family: "Cloud-Bold";
+}
+#fee td {
+    text-align: center;
+}
+
+
+@media (min-width: 1200px) {
+    /*large*/
+
+} 
+@media (max-width: 1199px) and (min-width: 992px) {
+    /*medium*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    /*small*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+    .page-hero .text {
+        padding: 50px 0;
+        width: 100%;
+        display: block;
+    }
+    .degree #left-nav {
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width: 767px) {
+    /*extra small*/
+    .page-hero {
+        background-position-y: 0px;
+    }
+    .content .right {
+        border-left:none;
+        margin-top: 30px;
+    }
+    .content .right ul ,.content .right ol  { 
+        margin: 0 0 1.5em 0em;
+        padding-left: 15px;
+    }
+    .degree #left-nav {
+        margin-bottom: 10px;
+    }
+    .page-hero .text {
+        padding: 20px 0;
+        width: 100%;
+        display: block;
+    }
+    
+}

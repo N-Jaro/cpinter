@@ -1,0 +1,55 @@
+.content {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+}
+.research-area {
+    margin: 15px 0;
+}
+
+.research-area .image {
+    overflow: hidden;
+}
+.research-area .image img {
+    width: 100%;
+}
+.research-area .text p {
+    padding-top: 10px;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 1200px) {
+    /*large*/
+
+} 
+@media (max-width: 1199px) and (min-width: 992px) {
+    /*medium*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    /*small*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+    .page-hero .text {
+        padding: 50px 0;
+        width: 100%;
+        display: block;
+    }
+
+}
+@media (max-width: 767px) {
+    /*extra small*/
+    .page-hero {
+        background-position-y: 0px;
+    }
+    .page-hero .text {
+        padding: 20px 0;
+        width: 100%;
+        display: block;
+    }
+    
+}

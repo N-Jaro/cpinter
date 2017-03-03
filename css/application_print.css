@@ -1,0 +1,22 @@
+/*
+@page {
+  size: A4 portrait;
+}
+
+@page :left {
+  margin-left: 3cm;
+}
+
+@page :right {
+  margin-left: 4cm;
+}*/
+
+@page {
+  size: 5.5in 8.5in;  
+  margin: 70pt 60pt 70pt;
+}
+
+@page:first {
+  size: 5.5in 8.5in;  
+  margin: 0;
+}

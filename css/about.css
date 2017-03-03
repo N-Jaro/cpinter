@@ -1,0 +1,112 @@
+.page-hero {
+    background-image: url("../img/hero.jpg");
+    background-position-y: -200px;
+    background-position-x: center;
+    background-size: cover;
+}
+.page-hero .overlay {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .4);
+    color: #FFF;
+}
+.page-hero .text {
+    padding: 100px 0;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+}
+.page-hero .overlay h1 {
+    font-family: "Cloud-Light";
+    color: #FFF;
+}
+.content {
+    padding-top: 40px;
+    padding-bottom: 50px; 
+}
+
+
+
+
+.about-content {
+    padding: 50px 0 90px;
+}
+.about-content .left {
+    overflow: hidden;
+    position: relative;
+}
+.left .img-wrap {
+    width: 100%;    
+    display: block;
+}
+.left-img-outter {
+    max-height: 500px;
+    display: block;
+    overflow: hidden;
+}
+.left-img-wrap {
+    position: relative;
+    right: -50%;
+    height: 100%;
+}
+.left-img-wrap img {
+    position: relative;
+    left: -50%;
+}
+
+.right h2 {
+    color: #b0000f;
+    font-family: "Cloud-Light";
+    margin: 0 0 20px;
+}
+.stat {
+    padding: 50px 0 0;
+}
+.stat-wrap {
+    text-align: center;
+}
+.stat-wrap .header a {
+    font-family: "Cloud-Bold";
+    font-size: 50px;
+    color: #b0000f;
+}
+.stat-wrap .header a:hover {
+    text-decoration: underline;
+}
+.stat-wrap .description {
+    color: #b0000f;
+}
+
+
+@media (min-width: 1200px) {
+    /*large*/
+
+} 
+@media (max-width: 1199px) and (min-width: 992px) {
+    /*medium*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    /*small*/
+    .page-hero {
+        background-position-y: -120px;
+    }
+    .page-hero .text {
+         width: 60%; 
+    }
+
+}
+@media (max-width: 767px) {
+    /*extra small*/
+    .page-hero {
+        background-position-y: 0px;
+    }
+    .page-hero .overlay h1 {
+        font-size: 50px;
+    }
+    .page-hero .text {
+         width: 100%; 
+    }
+}
