@@ -109,7 +109,6 @@ function wds_frontend_form_register() {
 		),
 		'after_row' => '<div class="errorMsg_photo" style="padding-left: 21%;"></div>',
 		'attributes'  => array(
-			'required'    => '',
 			'data-parsley-fileextension' => 'jpg',
 			'data-parsley-errors-container'=>".errorMsg_photo"
 		),
