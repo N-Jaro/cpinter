@@ -69,13 +69,11 @@ function wds_frontend_form_register() {
 			'Yes' => __( 'Yes', 'cmb2' ),
 			'No'   => __( 'No', 'cmb2' ),
 		),
-		'attributes'  => array(
-			//	attribue for radio_iline type
-			'data-parsley-mincheck'=>1, 
+		'attributes'  => array( 
 			'data-parsley-error-message'=>"Please indicatewhether you need financial support or not.",
 			'data-parsley-errors-container'=>".financial_error_container",
 			'data-parsley-class-handler'=>".financial_error_container",
-			'required'    => '',
+			'required' => '',
 		),
 	) );
 
@@ -111,6 +109,7 @@ function wds_frontend_form_register() {
 		),
 		'after_row' => '<div class="errorMsg_photo" style="padding-left: 21%;"></div>',
 		'attributes'  => array(
+			'required'    => '',
 			'data-parsley-fileextension' => 'jpg',
 			'data-parsley-errors-container'=>".errorMsg_photo"
 		),
@@ -221,14 +220,6 @@ function wds_frontend_form_register() {
 		// 'timezone_meta_key' => 'wiki_test_timezone',
 		// 'date_format' => 'l jS \of F Y',
 	) );
-
-	// $cmb->add_field( array(
-	// 	'name'    => 'Birth place ',
-    // 	'description' => '',
-	// 	'classes' => 'form-group col-xs-12 col-md-12',
-	// 	'id'      => 'birth_place',
-	// 	'type'    => 'text',
-	// ) );
 
 	$cmb->add_field( array(
 		'name'       => 'Country of Citizenship',
@@ -2162,7 +2153,7 @@ function wds_frontend_form_register() {
 	//Publications/Awards/Honors/Scholarships Section
 	$cmb->add_field( array(
 		'name' => '',
-		'id' => 'work_wxp',
+		'id' => 'work_exp',
 		'classes' => 'form-group full-width col-xs-12 col-md-12',
 		'type' => 'wysiwyg',
 		'before_row' => '<h2>Work Experiences</h2>',
@@ -2254,20 +2245,6 @@ function wds_frontend_form_register() {
 	) );
 
 	$cmb->add_field( array(
-		'before_row' => '<h2>English Language Proficiency</h2>',
-		'name'    => 'Test type',
-		'id'      => 'eng_type',
-		'type'    => 'select',
-		'show_option_none' => false,
-		'default' => 'TOEFL',
-		'options' => array(
-			'TOEFL' => __( 'TOEFL', 'cmb2' ),
-			'IELTS'   => __( 'IELTS', 'cmb2' ),
-			'CU-TEP' => __( 'CUTEP ', 'cmb2' ),
-		),
-	) );
-
-	$cmb->add_field( array(
 		'before_row' => '<h2>How did you know about this program?</h2>',
 		'name'    => '',
 		'desc'    => '',
@@ -2340,6 +2317,8 @@ function wds_do_frontend_form_submission_shortcode( $atts = array() ) {
         if ( is_wp_error( $new_id ) ) {
 
             // If there was an error with the submission, add it to our ouput.
+
+			var_dump($_POST);
 
             $output .= '<div class="container">
 

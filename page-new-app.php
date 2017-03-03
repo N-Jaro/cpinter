@@ -19,16 +19,6 @@ if ( !is_user_logged_in() ) {
 
      ?>
 
-    <div class="bs-callout bs-callout-warning hidden">
-    <h4>Oh snap!</h4>
-    <p>This form seems to be invalid :(</p>
-    </div>
-
-    <div class="bs-callout bs-callout-info hidden">
-    <h4>Yay!</h4>
-    <p>Everything seems to be ok :)</p>
-    </div>
-
         <div class="cp_content container-fluid">
             <div class="container">
                 <div class="row">
