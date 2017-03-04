@@ -36,10 +36,14 @@
             <div class="col-xs-2">
                 <div class="image" style="padding-top: 10px;">
                     <?php 
-                        $image = wp_get_attachment_image( get_post_meta( get_the_ID(), 'photo_id', 1 ), array('137', '176'), "", array( "class" => "photo" ) );
+                    
 
-                        echo $image;
-                    ?>
+                        if(get_post_meta( get_the_ID(), 'photo_id', 1 )){
+                            $image = wp_get_attachment_image( get_post_meta( get_the_ID(), 'photo_id', 1 ), array('137', '176'), "", array( "class" => "photo" ) );
+
+                            echo $image;
+                        }
+                        ?>
                 </div>
             </div>
         </div>
@@ -231,13 +235,13 @@
 
                 ?>
                 <h3>Degree <?php echo $counter; ?></h3>
-                <p>
-                    <span class="app_label">Institute </span><span class="app_msg" style="min-width: 490px;"><?php echo "$institution,  $institution_city, $institution_Country"; ?></span>
+                    <span class="app_label">Institute </span><span class="app_msg" style="min-width: 400px;"><?php echo $institution; ?></span>
+                    <span class="app_label">City </span><span class="app_msg" style="min-width: 314px;"><?php echo $institution_city; ?></span>
+                    <span class="app_label">Country </span><span class="app_msg" style="min-width: 140px;"><?php echo $institution_Country; ?></span>
                     <span class="app_label">Degree </span><span class="app_msg degree"><?php echo $institution_degree? $institution_degree: "-"; ?></span>
-                    <span class="app_label">Major </span><span class="app_msg degree"><?php echo $major? $major : "-"; ?></span>
+                    <span class="app_label">Major </span><span class="app_msg degree" style="min-width: 270px;"><?php echo $major? $major : "-"; ?></span>
                     <span class="app_label">GPA </span><span class="app_msg edu"><?php echo $gpa; ?></span>
                     <span class="app_label">Year of graduation </span><span class="app_msg edu"><?php echo $graduate_date; ?></span>
-                </p>
                     
                 <?php   
                   $counter++; 
@@ -248,7 +252,6 @@
 
              <div class="col-xs-12 section"> 
                 <h2>Publications</h2>
-                <div class="award">
 
                     <?php 
                       $publication = get_post_meta( get_the_ID(), 'publication', true );
@@ -256,12 +259,10 @@
                       echo wpautop($publication);
                     ?>
                    
-                </div>
             </div>
             
             <div class="col-xs-12 section"> 
                 <h2>Awards/Honors/Scholarships</h2>
-                <div class="award">
 
                     <?php 
                       $award = get_post_meta( get_the_ID(), 'award', true );
@@ -269,12 +270,10 @@
                       echo wpautop($award);
                     ?>
                    
-                </div>
             </div>
 
              <div class="col-xs-12 section"> 
                 <h2>Work Experiences</h2>
-                <div class="award">
 
                     <?php 
                       $work_exp = get_post_meta( get_the_ID(), 'work_exp', true );
@@ -282,7 +281,6 @@
                       echo wpautop($work_exp);
                     ?>
                    
-                </div>
             </div>
 
         </div>
