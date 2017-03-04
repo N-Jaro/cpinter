@@ -35,7 +35,11 @@
             </div>
             <div class="col-xs-2">
                 <div class="image" style="padding-top: 10px;">
-                    <img style="border:solid 1px #000;width:137px;" src="<?php echo $css_path."/"?>test/img/place_holder.png">
+                    <?php 
+                        $image = wp_get_attachment_image( get_post_meta( get_the_ID(), 'photo_id', 1 ), array('137', '176'), "", array( "class" => "photo" ) );
+
+                        echo $image;
+                    ?>
                 </div>
             </div>
         </div>
@@ -56,8 +60,11 @@
                         echo "Doctor of Philosophy in Computer Engineering";
                       }
                     ?>
-
                   </span>
+                <br>
+                <span class="app_label">Apply for financial support: </span>
+                <span class="app_msg"><?php echo get_post_meta( get_the_ID(), 'financial', true ); ?></span>
+
                 </p>
 
                 <small>last update: <?php the_time( "j F Y g:i a" ); ?></small>
@@ -75,7 +82,7 @@
                       $full_name = "$prefix $first_name $middle_name $last_name";
                     ?> 
 
-                    <span class="app_label">Name </span><span class="app_msg"><?php echo $full_name; ?></span>
+                    <span class="app_label">Name </span><span class="app_msg" style="min-width: 330px;"><?php echo $full_name; ?></span>
                     
                     <?php 
                       $gender = get_post_meta( get_the_ID(), 'gender', true );
@@ -92,12 +99,12 @@
                     <?php 
                       $birthdate = get_post_meta( get_the_ID(), 'birthdate', true );
                     ?>
-                    <span class="app_label">Birthdate </span><span class="app_msg"><?php echo $birthdate; ?></span>
+                    <span class="app_label">Birthdate </span><span class="app_msg" style="min-width: 250px;"><?php echo $birthdate; ?></span>
 
                     <?php 
                       $country = get_post_meta( get_the_ID(), 'country', true );
                     ?>
-                    <span class="app_label">Country of Citizenship </span><span class="app_msg"><?php echo get_country_name($country); ?></span>
+                    <span class="app_label">Country of Citizenship </span><span class="app_msg" style="min-width: 290px;"><?php echo get_country_name($country); ?></span>
 
                     <?php 
                       $nationality = get_post_meta( get_the_ID(), 'nationality', true );
@@ -107,28 +114,28 @@
                     <?php 
                       $citizen_id = get_post_meta( get_the_ID(), 'citizen_id', true );
                     ?>
-                    <span class="app_label">Citizen ID </span><span class="app_msg"><?php echo $citizen_id; ?></span>
+                    <span class="app_label">Citizen ID </span><span class="app_msg" style="min-width: 200px;"><?php echo $citizen_id; ?></span>
 
                     <h3>Passport Information</h3>
                     <?php 
                       $passport_id = get_post_meta( get_the_ID(), 'passport_id', true );
                     ?>
-                    <span class="app_label">Passport ID </span><span class="app_msg"><?php echo $passport_id; ?></span>
+                    <span class="app_label">Passport ID </span><span class="app_msg" style="min-width: 170px;"><?php echo $passport_id; ?></span>
 
                     <?php 
                       $p_issue = get_post_meta( get_the_ID(), 'p_issue', true );
                     ?>
-                    <span class="app_label">Date of Issued </span><span class="app_msg"><?php echo $p_issue; ?></span>
+                    <span class="app_label">Date of Issued </span><span class="app_msg" style="min-width: 120px;"><?php echo $p_issue; ?></span>
 
                     <?php 
                       $p_expire = get_post_meta( get_the_ID(), 'p_expire', true );
                     ?>
-                    <span class="app_label">Date of Expiary </span><span class="app_msg"><?php echo $p_expire; ?></span>
+                    <span class="app_label">Date of Expiary </span><span class="app_msg" style="min-width: 120px;"><?php echo $p_expire; ?></span>
 
                     <?php 
                       $p_country = get_post_meta( get_the_ID(), 'p_country', true );
                     ?>
-                    <span class="app_label">Country of Issue </span><span class="app_msg"><?php echo get_country_name($p_country); ?></span>
+                    <span class="app_label">Country of Issue </span><span class="app_msg" style="min-width: 150px;"><?php echo get_country_name($p_country); ?></span>
                     
                 </p>
             </div>
@@ -147,12 +154,15 @@
                       $current_country_name = get_country_name($current_country);
                       $current_tel = get_post_meta( get_the_ID(), 'current_tel', true );
 
-                      $full_current_address = "$current_adress, $current_city, $current_province, $current_zip, $current_country_name";
+                     //$full_current_address = "$current_adress, $current_city, $current_province, $current_zip, $current_country_name";
                     ?> 
 
 
-                    <span class="app_msg address"><?php echo $full_current_address; ?></span>
-                    <br>
+                    <span class="app_label">Address</span><span class="app_msg tel" style="min-width: 777px;"><?php echo $current_adress;?></span>
+                    <span class="app_label">City</span><span class="app_msg tel"><?php echo $current_city;?></span>
+                    <span class="app_label">Province</span><span class="app_msg tel"><?php echo $current_province;?></span>
+                    <span class="app_label">Zip code</span><span class="app_msg tel"><?php echo $current_zip;?></span>
+                    <span class="app_label">Country</span><span class="app_msg tel"><?php echo $current_country_name;?></span>
                     <span class="app_label">Phone Number </span><span class="app_msg tel"><?php echo $current_tel ? $current_tel : "-"; ?></span>
                     
                 </p>
@@ -167,11 +177,14 @@
                       $second_country_name = get_country_name($second_country);
                       $second_tel = get_post_meta( get_the_ID(), 'second_tel', true );
 
-                      $full_second_address = "$second_adress, $second_city, $second_province, $second_zip, $second_country_name";
+                      //$full_second_address = "$second_adress, $second_city, $second_province, $second_zip, $second_country_name";
                     ?> 
 
-                    <span class="app_msg address"><?php echo $full_second_address; ?></span>
-                    <br>
+                    <span class="app_label">Address</span><span class="app_msg tel" style="min-width: 777px;"><?php echo $second_adress;?></span>
+                    <span class="app_label">City</span><span class="app_msg tel"><?php echo $second_city;?></span>
+                    <span class="app_label">Province</span><span class="app_msg tel"><?php echo $second_province;?></span>
+                    <span class="app_label">Zip code</span><span class="app_msg tel"><?php echo $second_zip;?></span>
+                    <span class="app_label">Country</span><span class="app_msg tel"><?php echo $second_country_name;?></span>
                     <span class="app_label">Phone Number </span><span class="app_msg tel"><?php echo $second_tel ? $second_tel :"-"; ?></span>
                     
                 </p>
@@ -204,26 +217,26 @@
                         $institution_degree = $entry['institution_degree'] ;
                     }
 
-                    if ( isset( $entry['major'] ) ) {
-                        $major = $entry['major'] ;
+                    if ( isset( $entry['institution_major'] ) ) {
+                        $major = $entry['institution_major'] ;
                     }
 
-                    if ( isset( $entry['gpa'] ) ) {
-                        $gpa = $entry['gpa'] ;
+                    if ( isset( $entry['institution_gpa'] ) ) {
+                        $gpa = $entry['institution_gpa'] ;
                     }
 
-                    if ( isset( $entry['graduate_date'] ) ) {
-                        $graduate_date = $entry['graduate_date'] ;
+                    if ( isset( $entry['institution_graduate_date'] ) ) {
+                        $graduate_date = $entry['institution_graduate_date'] ;
                     }
 
                 ?>
                 <h3>Degree <?php echo $counter; ?></h3>
                 <p>
-                    <span class="app_msg address"><?php echo "$institution,  $institution_city, $institution_Country"; ?></span>
+                    <span class="app_label">Institute </span><span class="app_msg" style="min-width: 490px;"><?php echo "$institution,  $institution_city, $institution_Country"; ?></span>
                     <span class="app_label">Degree </span><span class="app_msg degree"><?php echo $institution_degree? $institution_degree: "-"; ?></span>
                     <span class="app_label">Major </span><span class="app_msg degree"><?php echo $major? $major : "-"; ?></span>
                     <span class="app_label">GPA </span><span class="app_msg edu"><?php echo $gpa; ?></span>
-                    <span class="app_label">Date of graduation </span><span class="app_msg edu"><?php echo $graduate_date; ?></span>
+                    <span class="app_label">Year of graduation </span><span class="app_msg edu"><?php echo $graduate_date; ?></span>
                 </p>
                     
                 <?php   
@@ -254,6 +267,19 @@
                       $award = get_post_meta( get_the_ID(), 'award', true );
 
                       echo wpautop($award);
+                    ?>
+                   
+                </div>
+            </div>
+
+             <div class="col-xs-12 section"> 
+                <h2>Work Experiences</h2>
+                <div class="award">
+
+                    <?php 
+                      $work_exp = get_post_meta( get_the_ID(), 'work_exp', true );
+
+                      echo wpautop($work_exp);
                     ?>
                    
                 </div>

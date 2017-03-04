@@ -41,6 +41,11 @@ h3 {
     padding-bottom: 0;
 }
 
+.photo {
+    border:solid 1px #000;
+    width:137px;
+}
+
 
 .app_msg {
     border-bottom: 1px dotted #333;

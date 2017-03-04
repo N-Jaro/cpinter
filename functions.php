@@ -328,7 +328,7 @@ function ST4_columns_content_only_movies($column_name, $post_ID) {
 
 	if ($column_name == 'passport') {
 		$has_passport = get_post_meta( $post_ID, 'passport_copy', true );
-		if($has_sop){
+		if($has_passport){
 			echo "<a href='$has_passport' target='_blank'><span class='dashicons dashicons-yes'></span></a>";
 		} else {
 			echo "<span class='dashicons dashicons-no'></span>";
@@ -356,7 +356,7 @@ function ST4_columns_content_only_movies($column_name, $post_ID) {
 
 
 	 if ($column_name == 'lang_test') {
-         $has_eng = get_post_meta( $post_ID, 'lang_cert', true );
+         $has_eng = get_post_meta( $post_ID, 'test_result', true );
 		if($has_eng){
 			echo "<a href='$has_eng' target='_blank'><span class='dashicons dashicons-yes'></span></a>";
 		} else {

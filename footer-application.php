@@ -11,6 +11,12 @@
 
 <script type="text/javascript">
 
+    if($("#how_you_know4").is(':checked')) {
+        $("#how_you_know_other").show();
+    } else {
+        $("#how_you_know_other").hide();
+    }
+
     $(function () {
         $('#application-form').parsley();
     });
